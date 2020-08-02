@@ -45,7 +45,7 @@ window.onload = () => {
   var list = document.getElementById("card-list");
   events.forEach((event) => {
     const card = generateCard(event);
-    list.innerHTML += card;  
+    list.innerHTML += card;
   });
 };
 
