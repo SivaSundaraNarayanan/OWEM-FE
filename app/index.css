@@ -105,7 +105,8 @@ h1 {
   border-radius: 1rem;
   box-shadow: 1px 1px 9px 0px rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
-  display: flex;
+  margin: 0 auto;
+  display: inline-flex;
   flex-direction: column;
   margin: 2rem;
   overflow: hidden;
@@ -127,6 +128,10 @@ h1 {
   font-size: 0.75rem;
 }
 
+#card-list {
+  /* display: flex; */
+}
+
 .card-body {
   box-sizing: border-box;
   width: 100%;
@@ -134,37 +139,37 @@ h1 {
   background-color: #fff;
 }
 
+.image img {
+  width: 100%;
+}
+
 .register-button {
   width: 100%;
   padding: 0.75rem;
   border: none;
   outline: none;
-  background-color: red;
+  background-color: #21709e;
   color: #fff;
   font-family: lemon-milk;
-  border-radius: 0.5rem;
-  /* box-sizing: border-box; */
+  border-radius: 0.25rem;
+  transition: all 0.25s;
+}
+.register-button:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 7px 1px #21709eee;
 }
 
-@media only screen and (max-width: 425px) {
-  .card-header .title {
-    font-size: 1rem;
-  }
-
-  .card-header .description {
-    font-size: 0.75rem;
-  }
-}
+/* x */
 
 @media only screen and (min-width: 426px) {
   .card {
-    width: 50%;
+    width: calc((100% / 2) - 4rem);
   }
 }
 
 @media only screen and (min-width: 769px) {
   .card {
-    width: calc(100% / 3);
+    width: calc((100% / 3) - 4rem);
   }
 }
 
