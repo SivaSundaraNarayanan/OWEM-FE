@@ -64,11 +64,15 @@ function generateCard({ title, description, image, from, to }) {
   </div>
 
   <div class="card-body">
-    <span> ${new Date(from).toDateString()} </span>
+    <span> ${new Date(from).toLocaleString("en-US", {
+      dateStyle: "medium",
+    })} </span>
     <span>
       to
     </span>
-    <span> ${new Date(from).toDateString()} </span>
+    <span> ${new Date(to).toLocaleString("en-US", {
+      dateStyle: "medium",
+    })} </span>
   </div>
   <button class="register-button">Register</button>
 </div>`;

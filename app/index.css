@@ -137,6 +137,8 @@ h1 {
   width: 100%;
   padding: 0.5rem 1.25rem;
   background-color: #fff;
+  font-size: 0.75rem;
+  font-family: lemon-milk;
 }
 
 .image img {
@@ -156,7 +158,21 @@ h1 {
 }
 .register-button:hover {
   cursor: pointer;
-  box-shadow: 0px 0px 7px 1px #21709eee;
+}
+
+.footer {
+  padding: 1rem 2rem;
+  background-color: #efefef;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #969696;
+  font-family: lemon-milk;
+}
+
+.footer a {
+  color: #969696;
+  text-decoration: none;
 }
 
 /* x */
@@ -179,7 +195,7 @@ h1 {
   }
 
   main {
-    padding: 2rem 0;
+    padding: 2rem 0 0 0;
   }
 
   header h1 {
