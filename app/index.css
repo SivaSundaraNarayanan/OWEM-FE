@@ -127,10 +127,10 @@ h1 {
   color: #a0a0a0;
   font-size: 0.75rem;
 }
-
+/* 
 #card-list {
-  /* display: flex; */
-}
+   display: flex; 
+} */
 
 .card-body {
   box-sizing: border-box;
