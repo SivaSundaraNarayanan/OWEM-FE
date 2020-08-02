@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.fixed {
+  box-shadow: 1px 1px 9px 1px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+  background-color: #fff;
+}
+
+.hidden {
+  margin-top: -4.5rem;
+  box-shadow: none;
+  transition: all 0s ease-in;
+}
+
+.topnav {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  height: 4rem;
+}
+
+main {
+  position: relative;
+}
+
+body::after {
+  content: "";
+  background-image: url("../images/BG-01.png");
+  opacity: 0.05;
+  background-size: contain;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: -1;
+}
+
+header {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 1.5rem;
+  align-items: center;
+  font-size: 1rem;
+  font-family: lemon-milk;
+}
+
+header img {
+  width: 50%;
+}
+
+h1 {
+  color: #21709e;
+  text-align: center;
+  margin: 0;
+}
+
+.captions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  font-family: titillium;
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 0.5rem 1.25rem;
+}
+
+.button-section {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.button-section button {
+  color: #fff;
+  border: none;
+  background-color: #21709e;
+  padding: 0.5rem 1.5rem;
+  outline: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+
+.button-section button:hover {
+  background-color: #2b7aa8;
+}
+
+@media only screen and (max-width: 768px) {
+  .topnav {
+    height: 3rem;
+  }
+
+  .content {
+    font-size: 1rem;
+  }
+
+  main {
+    padding: 2rem 0;
+  }
+
+  header h1 {
+    text-align: left;
+  }
+
+  header img {
+    width: 100%;
+  }
+
+  header {
+    flex-direction: column;
+  }
+}
