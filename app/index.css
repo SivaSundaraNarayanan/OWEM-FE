@@ -101,9 +101,9 @@ h1 {
 }
 
 @media only screen and (max-width: 768px) {
-  .topnav {
+  /* .topnav {
     height: 4rem;
-  }
+  } */
 
   .content {
     font-size: 1rem;
