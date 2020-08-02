@@ -170,6 +170,11 @@ h1 {
   font-family: lemon-milk;
 }
 
+.footer .contact {
+  border-left: 2px solid #969696;
+  padding-left: 2rem;
+}
+
 .footer a {
   color: #969696;
   text-decoration: none;
