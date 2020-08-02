@@ -89,7 +89,7 @@ h1 {
   color: #fff;
   border: none;
   background-color: #21709e;
-  padding: 0.5rem 1.5rem;
+  padding: 0.75rem 2.5rem;
   outline: none;
   font-size: 1rem;
   cursor: pointer;
@@ -100,11 +100,75 @@ h1 {
   background-color: #2b7aa8;
 }
 
-@media only screen and (max-width: 768px) {
-  /* .topnav {
-    height: 4rem;
-  } */
+.card {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 9px 0px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  overflow: hidden;
+}
 
+.card-header {
+  padding: 0.5em 1rem;
+  font-family: lemon-milk;
+}
+
+.card-header .title {
+  font-size: 1.25rem;
+  margin: 0.25rem 0;
+  color: #212121;
+}
+
+.card-header .description {
+  color: #a0a0a0;
+  font-size: 0.75rem;
+}
+
+.card-body {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem 1.25rem;
+  background-color: #fff;
+}
+
+.register-button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: #fff;
+  font-family: lemon-milk;
+  border-radius: 0.5rem;
+  /* box-sizing: border-box; */
+}
+
+@media only screen and (max-width: 425px) {
+  .card-header .title {
+    font-size: 1rem;
+  }
+
+  .card-header .description {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (min-width: 426px) {
+  .card {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .card {
+    width: calc(100% / 3);
+  }
+}
+
+@media only screen and (max-width: 768px) {
   .content {
     font-size: 1rem;
   }
